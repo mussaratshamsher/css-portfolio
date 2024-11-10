@@ -3,8 +3,8 @@
 import React from 'react'
 import { useState } from 'react'; 
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from './../public/logo.jpg'
+// import Image from 'next/image';
+// import logo from './../public/logo.jpg'
 
 export default function Navbar  () {
 

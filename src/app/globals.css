@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+
+#nav{
+  background: orange;
+  width: 100%;
+  height: 15%;
+  padding: 5%;
+}
+header{
+  display: flex; 
+}
+header nav{
+display: flex;
+justify-content:flex-end;
+align-items: center;
+  color: white;
+  margin-right: 2%;
+}
+header nav li{
+  margin-right: 5%;
+}
+header nav li:hover{
+ 
+  background: white;
+  color:orange;
+  border: 5px ;
+  border-radius: 10%;
+}
+ 
+section{
+  height: px;
+  width:100%;
+  padding: 10%;
+}
+section::before{
+  content: " ";
+  position:absolute;
+  inset: 0;
+  margin-top: 5%;
+  width: 100%;
+  background-image: url(./../public/mainbg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+ z-index: -1;
+  opacity: 70%;
+} 
+h1{
+  color: orangered;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ width: 60%; height: 400px;
+ margin-left: 20%;
+ margin-right: 20%;
+ border: 2px solid rgb(192, 187, 187);
+ border-radius: 10px;
+ box-shadow: 0px 15px 10px gray;
+  color: black;
+}
+#inputs{
+  font-size: 18px;
+  padding:2%;
+  margin: 20px 0 10px;
+  color:rgb(3, 2, 2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(22, 10, 12);
+  position: center;
+}
+#output{
+  width: 60%; height: auto;
+  font-size: 18px;
+  padding:2%;
+  margin: 40px 0 10px;
+  color:rgb(3, 2, 2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(22, 10, 12);
+  position: center;
+}
+ .btn{
+  width: 100px;
+  height: 50px;
+  display: flex; margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  color: white; font-size: medium;
+  border-radius: 5px;
+}
+.btn:hover{
+font-size: large; color: white;
+background-color: black;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4%; hyphens:none;
+ width: 70%; height: auto;
+ margin-left: 15%;
+ margin-right: 15%; 
+ font-size:x-large;font-family: 'Times New Roman', Times, serif;
+ margin-top: 5%; margin-bottom: 10%;
+ border: 2px solid rgb(192, 187, 187);
+ border-radius: 10px;  color: black;
+ box-shadow: 0px 15px 10px gray;
+}
+
+#about_1{
+  width:30%; height: 40%;
+  margin-left: auto; margin-right: auto;
+  margin-top: 5%;  
+  border: 2px solid rgb(192, 187, 187); 
+  border-radius: 50%; 
+  box-shadow: 0px 15px 10px gray;
+}
+#project_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+#project{
+  display: flex;
+  flex-direction: column;
+  padding: 2%; width: 90%;
+  justify-content: center; align-items: center;
+  border: 2px solid rgb(192, 187, 187);
+  border-radius: 10px;  color: white;
+  box-shadow: 0px 15px 10px gray;
+  background: orange;
+  
+  margin-top: 5%; margin-bottom: 5%;
+
+}
+#project_a{
+  display: flex;
+  flex-direction: column;   
+  width: 80%; height: auto; padding: 2%;
+  justify-content: center; align-items: center;
+  border: 2px solid rgb(192, 187, 187);
+  border-radius: 10px;  color: orange;
+  box-shadow: 0px 15px 10px gray;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%; margin-top: 5%;
+}
+.btn_a{
+  width: 100px;
+  height: 50px;
+  display: flex; margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: white; font-size: medium;
+  border-radius: 5px;
+}
+.btn_a:hover{
+font-size: large; color: white;
+background-color: orange;
+}
+
+
+
+
+footer{
+  width: 100%; height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  font-size: 70px;
+  
+}
+footer i:hover{
+  font-size: 72px;
+color: orangered;
+}
+
+
+@media screen and(max-width:400) {
+  
+}
